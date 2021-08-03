@@ -4,16 +4,16 @@ from dotenv import load_dotenv
 
 load_dotenv()
 que = {}
-SESSION_NAME = getenv("SESSION_NAME", "session")
+SESSION_NAME = getenv("SESSION_NAME", "")
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 BOT_USERNAME = getenv("BOT_USERNAME", "")
 admins = {}
-API_ID = int(getenv("API_ID"))
+API_ID = int(getenv(""))
 API_HASH = getenv("API_HASH", "")
 
 START_IMG = getenv("START_IMG", "https://telegra.ph/file/c5f676adcdbe5a0bbb232.jpg")
 
-DURATION_LIMIT = int(getenv("DURATION_LIMIT", "10"))
+DURATION_LIMIT = int(getenv("DURATION_LIMIT", "10000"))
 
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ !").split())
 
