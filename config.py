@@ -1,3 +1,6 @@
+import os
+import re
+from youtube_dl import YoutubeDL
 from os import getenv
 
 from dotenv import load_dotenv
